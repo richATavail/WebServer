@@ -96,7 +96,7 @@ public class FileCache
 	 */
 	public static void readFile (
 		final @NotNull String path,
-		final @NotNull BiConsumer<Integer, ByteBuffer> success,
+		final @NotNull BiConsumer<Integer, byte[]> success,
 		final @NotNull Consumer<Throwable> failure)
 	{
 		// Opportunistic read to avoid synchronization.
@@ -104,7 +104,7 @@ public class FileCache
 			soleInstance.fileMap.getOrDefault(path, null);
 		if (fileBytes != null)
 		{
-			success.accept(fileBytes.length, ByteBuffer.wrap(fileBytes));
+			success.accept(fileBytes.length, fileBytes);
 			return;
 		}
 		synchronized (soleInstance.lock)
@@ -113,7 +113,7 @@ public class FileCache
 				soleInstance.fileMap.getOrDefault(path, null);
 			if (fileBytes != null)
 			{
-				success.accept(fileBytes.length, ByteBuffer.wrap(fileBytes));
+				success.accept(fileBytes.length, fileBytes);
 				return;
 			}
 			final OutstandingRequest request =
@@ -144,7 +144,7 @@ public class FileCache
 		 * bytes} read and the {@link ByteBuffer} containing the file {@code
 		 * bytes}, to be called upon successful reading of the file.
 		 */
-		final @NotNull BiConsumer<Integer, ByteBuffer> success;
+		final @NotNull BiConsumer<Integer, byte[]> success;
 
 		/**
 		 * The {@link Consumer} that accepts a {@link Throwable} in the event
@@ -165,7 +165,7 @@ public class FileCache
 		 *        event the file fails to be read.
 		 */
 		private OutstandingRequest (
-			final BiConsumer<Integer, ByteBuffer> success,
+			final BiConsumer<Integer, byte[]> success,
 			final Consumer<Throwable> failure)
 		{
 			this.success = success;
@@ -204,12 +204,11 @@ public class FileCache
 					buffer,
 					(bytesRead, fileBuffer) ->
 					{
+						final byte[] copy;
 						synchronized (soleInstance.lock)
 						{
-							final byte[] copy =
-								Arrays.copyOf(
-									fileBuffer.array(),
-									fileBuffer.position());
+							copy = Arrays.copyOf(
+								fileBuffer.array(), fileBuffer.position());
 							soleInstance.fileMap.put(path, copy);
 							soleInstance.retrievalMap.remove(path);
 						}
@@ -217,7 +216,7 @@ public class FileCache
 						{
 							ServerRuntime.scheduleTask(() ->
 								request.success.accept(
-									fileBuffer.limit(), fileBuffer));
+									fileBuffer.limit(), copy));
 						}
 					},
 					throwable ->

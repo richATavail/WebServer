@@ -1,71 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d80afa-0dcb-4415-a968-40edfe49204e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/server.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration$PropertyKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/configuration/ServerConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/ApplicationException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/InvalidProtocolMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/MalformedHTTPHeaderException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/PropertiesException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/ProtocolMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/ProtocolVersion$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/ProtocolVersion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/HTTPProtocolMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/ResponseStatusCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/Channel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/FileUtility$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/FileUtility.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime$ExitCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/configuration/ServerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/exceptions/ApplicationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/exceptions/InvalidProtocolMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/exceptions/PropertiesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPProtocolMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/server/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/utilities/ServerRuntime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_site/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_site/next/page.html" afterDir="false" />
+    <list default="true" id="39d80afa-0dcb-4415-a968-40edfe49204e" name="Default" comment="Added structure around headers. Stream-lined message response through consolidation of headers and message body.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderFieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache$OutstandingRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache$OutstandingRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache$RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache$RequestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/cache/FileCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/InvalidProtocolMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/InvalidProtocolMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/exceptions/MalformedHTTPHeaderException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/ResponseStatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/protocol/http/ResponseStatusCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/Channel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/Channel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/server/HTTPChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime$ExitCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime$ExitCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebServer/org/availlang/raa/utilities/ServerRuntime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,15 +39,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Channel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Channel.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="127" column="4" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="4" />
+            <state relative-caret-position="322">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4022#4023#0" expanded="true" />
-                <element signature="e#4051#4052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +54,7 @@
       <file leaf-file-name="HTTPProtocolMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPProtocolMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2134">
+            <state relative-caret-position="210">
               <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
               <folding>
                 <element signature="e#0#6178#0" expanded="true" />
@@ -107,25 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseStatusCode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+            <state relative-caret-position="165">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
               <folding>
-                <element signature="e#0#8931#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#7452#7479#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Server.java">
+      <file leaf-file-name="FileUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="1035">
+              <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +91,8 @@
       <file leaf-file-name="HTTPChannel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            <state relative-caret-position="159">
+              <caret line="67" column="70" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1052#1053#0" expanded="true" />
@@ -147,16 +102,111 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FileCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="218" column="60" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseStatusCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="386" column="43" selection-start-line="386" selection-start-column="43" selection-end-line="386" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTTPHeaderField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="178" column="75" selection-start-line="178" selection-start-column="75" selection-end-line="178" selection-end-column="75" />
+              <folding>
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#1319#1320#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1280#1281#0" expanded="true" />
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1641#1642#0" expanded="true" />
+                <element signature="e#1839#1840#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#2020#2021#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="e#2648#2649#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#3243#3244#0" expanded="true" />
+                <element signature="e#3286#3287#0" expanded="true" />
+                <element signature="e#3227#3228#0" expanded="true" />
+                <element signature="e#3270#3271#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
+                <element signature="e#1922#1923#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTTPHeaderFieldType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderFieldType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GET</find>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -191,13 +241,18 @@
         <option value="$PROJECT_DIR$/config/server.properties" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java" />
-        <option value="$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/server/Channel.java" />
-        <option value="$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/utilities/ServerRuntime.java" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/exceptions/InvalidProtocolMethod.java" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/exceptions/MalformedHTTPHeaderException.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeader.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HeaderFieldType.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderField.java" />
         <option value="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java" />
+        <option value="$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderFieldType.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -219,112 +274,6 @@
             <path>
               <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="protocol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="protocol" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="availlang" type="462c0819:PsiDirectoryNode" />
-              <item name="raa" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="test_site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="test_site" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,13 +310,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="raa.Main" />
-      <module name="WebServer" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.availlang.raa.Application" />
       <module name="WebServer" />
       <extension name="coverage">
@@ -394,7 +336,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -415,43 +357,43 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Cargo" />
-      <window_info anchor="bottom" id="Messages" weight="0.32969698" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="PsiViewer" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32969698" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="PsiViewer" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33575758" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58480567" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.36242425" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58480567" visible="true" weight="0.22532189" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.36242425" />
       <window_info id="Structure" order="1" sideWeight="0.41519433" side_tool="true" weight="0.24964234" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29575756" />
-      <window_info id="Favorites" side_tool="true" weight="0.3297568" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35272726" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="3" sideWeight="0.58480567" weight="0.24964234" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.33575758" />
       <window_info anchor="right" id="Cargo" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="right" id="PsiViewer" order="2" />
       <window_info id="Structure" order="4" sideWeight="0.41519433" side_tool="true" weight="0.24964234" />
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.36242425" />
@@ -460,7 +402,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32969698" />
       <window_info anchor="right" id="Maven Projects" order="4" />
@@ -470,17 +412,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added structure around headers. Stream-lined message response through consolidation of headers and message body." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added structure around headers. Stream-lined message response through consolidation of headers and message body." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java</url>
-          <line>210</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="50" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -492,6 +430,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>code.responseHeader()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>new String(buffer.array(), 0, result, StandardCharsets.UTF_8)</expression-string>
         <language-id>JAVA</language-id>
@@ -532,14 +475,83 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>buffer.position()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPProtocolMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#6178#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#5883#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/ServerRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/net/ServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -554,16 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/example/WorkerRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/example/WorkerRunnable.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/nio/channels/AsynchronousChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -571,19 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/example/MultiThreadedServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding>
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/example/MultiThreadedServer.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/nio/channels/AsynchronousServerSocketChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -637,13 +628,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/exceptions/InvalidFileLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/exceptions/InvalidFileLocation.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
@@ -651,37 +636,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/BufferUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/BufferUtility.java" />
     <entry file="file://$PROJECT_DIR$/test_site/next/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolVersion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,24 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="43" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#2300#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/nio/file/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9886">
@@ -731,16 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -752,37 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="458" column="11" selection-start-line="458" selection-start-column="11" selection-end-line="458" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="237" column="17" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#4282#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/ServerRuntime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,9 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#3716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,41 +708,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#2425#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/exceptions/MalformedHTTPHeaderException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#2372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/exceptions/MalformedHTTPHeaderException.java" />
     <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/exceptions/PropertiesException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/ProtocolVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
-            <element signature="e#0#2513#0" expanded="true" />
+            <element signature="e#0#5883#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -863,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPProtocolMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2134">
+        <state relative-caret-position="210">
           <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
           <folding>
             <element signature="e#0#6178#0" expanded="true" />
@@ -872,15 +760,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/FileUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/utilities/ServerRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/cache/FileCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="218" column="60" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="178" column="75" selection-start-line="178" selection-start-column="75" selection-end-line="178" selection-end-column="75" />
+          <folding>
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#1319#1320#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1839#1840#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#3243#3244#0" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3227#3228#0" expanded="true" />
+            <element signature="e#3270#3271#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/ResponseStatusCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+        <state relative-caret-position="99">
+          <caret line="386" column="43" selection-start-line="386" selection-start-column="43" selection-end-line="386" selection-end-column="43" />
           <folding>
-            <element signature="e#0#8931#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#7452#7479#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/server/HTTPChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="67" column="70" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/availlang/raa/protocol/http/HTTPHeaderFieldType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

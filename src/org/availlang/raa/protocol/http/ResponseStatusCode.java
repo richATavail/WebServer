@@ -34,6 +34,9 @@ package org.availlang.raa.protocol.http;
 import com.sun.istack.internal.NotNull;
 import org.availlang.raa.configuration.ServerConfiguration;
 
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+
 /**
  * A {@code ResponseStatusCode} is the enumeration of HTTP Response Status Codes
  * as listed in RFC 7231.
@@ -333,17 +336,70 @@ public enum ResponseStatusCode
 	public final int code;
 
 	/**
-	 * Answer the start of the {@link ResponseStatusCode}-specific response to
-	 * the client.
+	 * Answer the HTTP header of the {@link ResponseStatusCode}-specific
+	 * response to the client.
 	 *
+	 * @param headers
+	 *        An array of HTTP headers represented as Strings.
 	 * @return A String.
 	 */
-	public @NotNull String responseHeader ()
+	public @NotNull String responseHeader (final String... headers)
 	{
-		return String.format("%s %d %s\n\n",
-			ServerConfiguration.protocolVersion().versionIdentifier,
-			code,
-			name());
+		final StringBuilder sb = new StringBuilder(
+			ServerConfiguration.protocolVersion().versionIdentifier)
+			.append(' ')
+			.append(code)
+			.append(' ')
+			.append(name())
+			.append("\r\n");
+
+		for (final String header : headers)
+		{
+			sb.append(header).append("\r\n");
+		}
+		return sb.append("\r\n").toString();
+	}
+
+	/**
+	 * Answer the {@link ByteBuffer} that contains the HTTP header of the {@link
+	 * ResponseStatusCode}-specific response to the client.
+	 *
+	 * @param headers
+	 *        An array of HTTP headers represented as Strings.
+	 * @return A {@code ByteBuffer}.
+	 */
+	public @NotNull ByteBuffer responseBuffer (final String... headers)
+	{
+		return StandardCharsets.UTF_8.encode(responseHeader(headers));
+	}
+
+	/**
+	 * Answer the {@link ByteBuffer} that contains the HTTP header of the {@link
+	 * ResponseStatusCode}-specific response as well as a message body to the
+	 * client.
+	 *
+	 * @param headers
+	 *        An array of HTTP headers represented as Strings.
+	 * @param messageBody
+	 *        The message body in the form of an array of {@code byte}s.
+	 * @return A {@code ByteBuffer}.
+	 */
+	public @NotNull ByteBuffer responseBuffer (
+		final byte[] messageBody,
+		final String... headers)
+	{
+		final byte[] headerBytes = responseHeader(headers)
+			.getBytes(StandardCharsets.UTF_8);
+		final byte[] response =
+			new byte[headerBytes.length + messageBody.length];
+		System.arraycopy(headerBytes, 0, response, 0, headerBytes.length);
+		System.arraycopy(
+			messageBody,
+			0,
+			response,
+			headerBytes.length - 1,
+			messageBody.length);
+		return ByteBuffer.wrap(response);
 	}
 
 	/**

@@ -57,37 +57,16 @@ extends Channel
 	 */
 	private void write (
 		final ResponseStatusCode code,
-		final ByteBuffer payload,
+		final byte[] payload,
 		final CompletionHandler<Integer, Void> handler)
 	{
-		final ByteBuffer header =
-			StandardCharsets.UTF_8.encode(code.responseHeader());
-		channel.write(
-			header,
-			null,
-			new CompletionHandler<Integer, Object>()
-			{
-				@Override
-				public void completed (
-					final Integer result,
-					final Object attachment)
-				{
-					write(payload, handler);
-				}
-
-				@Override
-				public void failed (
-					final Throwable exc,
-					final Object attachment)
-				{
-					handler.failed(exc, null);
-				}
-			});
+		final ByteBuffer message = code.responseBuffer(payload);
+		channel.write(message, null, handler);
 	}
 
 	/**
-	 * Write the {@link ResponseStatusCode#responseHeader()} to the provided
-	 * {@link AsynchronousSocketChannel} and {@linkplain #close()} the
+	 * Write the {@link ResponseStatusCode#responseBuffer(String...)}  to the
+	 * provided {@link AsynchronousSocketChannel} and {@linkplain #close()} the
 	 * connection.
 	 *
 	 * @param code
@@ -97,7 +76,7 @@ extends Channel
 	private void write (final ResponseStatusCode code)
 	{
 		channel.write(
-			StandardCharsets.UTF_8.encode(code.responseHeader()),
+			code.responseBuffer(),
 			null,
 			new CompletionHandler<Integer, Object>()
 			{
@@ -184,10 +163,10 @@ extends Channel
 
 							FileCache.readFile(
 								location,
-								(bytesRead, fileBuffer) ->
+								(bytesRead, byteArray) ->
 									write(
 										ResponseStatusCode.OK,
-										fileBuffer,
+										byteArray,
 										new CompletionHandler<Integer, Void>()
 										{
 											@Override
