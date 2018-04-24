@@ -33,9 +33,12 @@
 package org.availlang.raa.protocol.http;
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
+import org.availlang.raa.cache.FileCache;
 import org.availlang.raa.protocol.ProtocolMethod;
 import org.availlang.raa.protocol.ProtocolVersion;
+import org.availlang.raa.server.HTTPChannel;
 
+import java.nio.channels.CompletionHandler;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -58,9 +61,48 @@ implements ProtocolMethod
 	GET
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
+		}
+
+		@Override
+		public void processRequest (
+			final @NotNull HTTPRequest request, 
+			final @NotNull HTTPChannel channel)
+		{
+			// TODO as of right now this just presumes all GET requests are
+			// file requests (e.g. HTML page). This will be refactored in the
+			// future to be generic so as to support things like API calls using
+			// REST, SOAP, or some other protocol that enables client-server
+			// data driven applications.
+			FileCache.readFile(
+				request.requestTarget,
+				(bytesRead, byteArray) ->
+					channel.write(
+						ResponseStatusCode.OK,
+						byteArray,
+						new CompletionHandler<Integer, Void>()
+						{
+							@Override
+							public void completed (
+								final Integer result,
+								final Void attachment)
+							{
+								channel.close();
+							}
+
+							@Override
+							public void failed (
+								final Throwable exc,
+								final Void attachment)
+							{
+								// TODO log?
+								channel.close();
+							}
+						}),
+				throwable ->
+					channel.write(ResponseStatusCode.NOT_FOUND));
 		}
 	},
 
@@ -68,7 +110,7 @@ implements ProtocolMethod
 	POST
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -79,7 +121,7 @@ implements ProtocolMethod
 	PUT
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -90,7 +132,7 @@ implements ProtocolMethod
 	HEAD
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -101,7 +143,7 @@ implements ProtocolMethod
 	DELETE
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -112,7 +154,7 @@ implements ProtocolMethod
 	TRACE
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -123,7 +165,7 @@ implements ProtocolMethod
 	OPTIONS
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -134,7 +176,7 @@ implements ProtocolMethod
 	CONNECT
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -145,7 +187,7 @@ implements ProtocolMethod
 	PATCH
 	{
 		@Override
-		public Set<ProtocolVersion> supportedVersions ()
+		public @NotNull Set<ProtocolVersion> supportedVersions ()
 		{
 			return Collections.singleton(ProtocolVersion.HTTP_1_1);
 		}
@@ -157,7 +199,23 @@ implements ProtocolMethod
 	 *
 	 * @return A {@code Set}.
 	 */
-	public abstract Set<ProtocolVersion> supportedVersions ();
+	public abstract @NotNull Set<ProtocolVersion> supportedVersions ();
+
+	/**
+	 * Process the {@link HTTPRequest} received on the provided {@link
+	 * HTTPChannel}.
+	 *
+	 * @param request
+	 *        The {@code HTTPRequest} to process.
+	 * @param channel
+	 *        The {@code HTTPChannel} the request was received on.
+	 */
+	public void processRequest (
+		final @NotNull HTTPRequest request,
+		final @NotNull HTTPChannel channel)
+	{
+		channel.write(ResponseStatusCode.NOT_IMPLEMENTED);
+	}
 
 	/**
 	 * A {@link Map} of String {@link #name()}s to the respective
@@ -212,7 +270,7 @@ implements ProtocolMethod
 	 *        The method to confirm support for.
 	 * @return {@code true} indicates it is supported; {@code false} otherwise.
 	 */
-	public static boolean isInvalidMethod (final String method)
+	public static boolean isInvalidMethod (final @NotNull String method)
 	{
 		return protocolMethodMap.get(method.toUpperCase()) == null;
 	}
@@ -226,13 +284,13 @@ implements ProtocolMethod
 	 *         null} otherwise.
 	 */
 	public static @Nullable HTTPProtocolMethod protocolMethod (
-		final String method)
+		final @NotNull String method)
 	{
 		return protocolMethodMap.get(method.toUpperCase());
 	}
 
 	@Override
-	public boolean supportsProtocolVersion (final ProtocolVersion pv)
+	public boolean supportsProtocolVersion (final @NotNull ProtocolVersion pv)
 	{
 		return supportedVersions().contains(pv);
 	}

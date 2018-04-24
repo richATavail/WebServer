@@ -5,11 +5,8 @@
  */
 
 package org.availlang.raa.server;
-import org.availlang.raa.cache.FileCache;
-import org.availlang.raa.configuration.ServerConfiguration;
-import org.availlang.raa.exceptions.InvalidProtocolMethod;
 import org.availlang.raa.protocol.ProtocolVersion;
-import org.availlang.raa.protocol.http.HTTPProtocolMethod;
+import org.availlang.raa.protocol.http.HTTPRequest;
 import org.availlang.raa.protocol.http.ResponseStatusCode;
 
 import java.nio.ByteBuffer;
@@ -35,7 +32,7 @@ extends Channel
 	/**
 	 * Process a {@link ResponseStatusCode#BAD_REQUEST}.
 	 */
-	private void badRequest ()
+	public void badRequest ()
 	{
 		write(ResponseStatusCode.BAD_REQUEST);
 	}
@@ -55,7 +52,7 @@ extends Channel
 	 *        integer} representing the {@code bytes} written and a void
 	 *        attachment.
 	 */
-	private void write (
+	public void write (
 		final ResponseStatusCode code,
 		final byte[] payload,
 		final CompletionHandler<Integer, Void> handler)
@@ -73,7 +70,7 @@ extends Channel
 	 *        The {@link ResponseStatusCode} that informs the client the result
 	 *        of the request.
 	 */
-	private void write (final ResponseStatusCode code)
+	public void write (final ResponseStatusCode code)
 	{
 		channel.write(
 			code.responseBuffer(),
@@ -123,78 +120,7 @@ extends Channel
 						badRequest();
 						return;
 					}
-					final String[] headers = message.split("(?:\r\n)+");
-					System.out.println(message);
-					final String[] protocolRequest =
-						headers[0].split(" +");
-					if (protocolRequest.length != 3)
-					{
-						badRequest();
-						return;
-					}
-					final String pv = protocolRequest[2];
-					if (ProtocolVersion.isInvalidProtocol(pv))
-					{
-						write(ResponseStatusCode.HTTP_VERSION_NOT_SUPPORTED);
-						return;
-					}
-					final ProtocolVersion protocolVersion =
-						ProtocolVersion.protocolVersion(pv);
-					final HTTPProtocolMethod method;
-					try
-					{
-						method = (HTTPProtocolMethod)
-							protocolVersion.protocolMethod(protocolRequest[0]);
-					}
-					catch (final InvalidProtocolMethod e)
-					{
-						write(ResponseStatusCode.METHOD_NOT_ALLOWED);
-						return;
-					}
-
-					switch (method)
-					{
-						case GET:
-						{
-							final String location =
-								protocolRequest[1].equals("/")
-									? ServerConfiguration.homePage()
-									: protocolRequest[1];
-
-							FileCache.readFile(
-								location,
-								(bytesRead, byteArray) ->
-									write(
-										ResponseStatusCode.OK,
-										byteArray,
-										new CompletionHandler<Integer, Void>()
-										{
-											@Override
-											public void completed (
-												final Integer result,
-												final Void attachment)
-											{
-												close();
-											}
-
-											@Override
-											public void failed (
-												final Throwable exc,
-												final Void attachment)
-											{
-												// TODO log?
-												close();
-											}
-										}),
-								throwable ->
-									write(ResponseStatusCode.NOT_FOUND));
-
-							break;
-						}
-						default:
-							write(ResponseStatusCode.NOT_IMPLEMENTED);
-							break;
-					}
+					HTTPRequest.processRequest(message, HTTPChannel.this);
 				}
 
 				@Override
