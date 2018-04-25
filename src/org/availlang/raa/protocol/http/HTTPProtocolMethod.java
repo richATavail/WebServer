@@ -74,8 +74,9 @@ implements ProtocolMethod
 			// TODO as of right now this just presumes all GET requests are
 			// file requests (e.g. HTML page). This will be refactored in the
 			// future to be generic so as to support things like API calls using
-			// REST, SOAP, or some other protocol that enables client-server
-			// data driven applications.
+			// REST, or some other protocol that enables client-server data driven 
+			// applications. Any extension should allow for a generic way to 
+			// specify message handling.
 			FileCache.readFile(
 				request.requestTarget,
 				(bytesRead, byteArray) ->
